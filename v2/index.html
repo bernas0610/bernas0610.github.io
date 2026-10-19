@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="pt-BR" data-theme="dark">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="robots" content="noindex, nofollow">
+  <meta name="description" content="Bernardo Mendes, desenvolvedor backend Java. Projetos com Spring Boot, segurança, PostgreSQL e processamento assíncrono.">
+  <meta name="theme-color" content="#0A0D22">
+  <title>Bernardo Mendes — Backend, com propósito.</title>
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,400..800&family=JetBrains+Mono:wght@400;500;700&display=swap" rel="stylesheet">
+  <script src="theme.js"></script>
+  <link rel="stylesheet" href="styles.css">
+  <script src="app.js" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#conteudo">Pular para o conteúdo</a>
+  <header class="header shell">
+    <a class="brand" href="#inicio" aria-label="Bernardo Mendes, início">bm<span aria-hidden="true">.</span></a>
+    <div class="header-actions">
+      <button class="menu-toggle" type="button" aria-controls="navegacao" aria-expanded="false" hidden>Menu <span aria-hidden="true">+</span></button>
+      <nav id="navegacao" aria-label="Navegação principal">
+        <a href="#projetos">Projetos</a><a href="#sobre">Sobre</a><a href="#tecnologias">Stack</a><a href="#contato">Contato <span aria-hidden="true">↗</span></a>
+      </nav>
+      <button class="theme-toggle" type="button" aria-label="Ativar tema claro" aria-pressed="false" hidden><span aria-hidden="true">◐</span></button>
+    </div>
+  </header>
+  <main id="conteudo">
+    <section class="hero shell" id="inicio" aria-labelledby="titulo">
+      <div class="hero-copy">
+        <p class="eyebrow"><span class="status-dot" aria-hidden="true"></span> DESENVOLVEDOR BACKEND · SERGIPE, BR</p>
+        <h1 id="titulo">Bernardo<br><span>Mendes</span><span class="title-dot" aria-hidden="true">.</span></h1>
+        <p class="hero-statement">A lógica por trás.<br><em>O cuidado em cada detalhe.</em></p>
+        <p class="hero-description">Desenvolvo APIs e sistemas com Java e Spring Boot, conectando regras de negócio, segurança e dados. Busco minha primeira oportunidade em backend.</p>
+        <div class="actions"><a class="button primary" href="#projetos">Explorar projetos <span aria-hidden="true">↘</span></a><a class="text-link" href="../curriculo.pdf" target="_blank" rel="noopener">Currículo PDF <span aria-hidden="true">↗</span></a></div>
+        <div class="social-links" aria-label="Redes profissionais"><a href="https://github.com/bernas0610" target="_blank" rel="noopener">GitHub <span aria-hidden="true">↗</span></a><a href="https://www.linkedin.com/in/bernardo-mendes-028306305" target="_blank" rel="noopener">LinkedIn <span aria-hidden="true">↗</span></a></div>
+      </div>
+      <figure class="portrait">
+        <div class="portrait-frame"><img src="../foto.jpg" alt="Bernardo Mendes" width="640" height="800" fetchpriority="high"><span class="portrait-corner" aria-hidden="true">↗</span></div>
+        <div class="portrait-stamp" aria-hidden="true"><span>HTTP / 1.1</span><strong>200 OK<span>✳</span></strong></div>
+        <figcaption><span>UMA PESSOA POR TRÁS DO CÓDIGO.</span><span aria-hidden="true">01 / BM</span></figcaption>
+      </figure>
+      <div class="hero-bottom"><span>JAVA & SPRING BOOT</span><span>APIs · SEGURANÇA · DADOS</span><a href="#projetos">Conheça meu trabalho <span aria-hidden="true">↓</span></a></div>
+    </section>
+
+    <section class="projects light-section" id="projetos" aria-labelledby="projetos-titulo">
+      <div class="shell">
+        <div class="section-heading"><div><p class="eyebrow">01 / TRABALHO EM PRÁTICA</p><h2 id="projetos-titulo">Do problema<br>ao <em>código.</em></h2></div><p>Projetos que conectam o que estudo<br class="desktop-break"> com o que construo.</p></div>
+        <article class="featured project-card" aria-labelledby="nexus-titulo">
+          <div class="featured-copy">
+            <p class="project-meta"><span>PROJETO PRINCIPAL</span><span>01</span></p>
+            <h3 id="nexus-titulo">NexusGest<span aria-hidden="true">↗</span></h3>
+            <p class="project-subtitle">Gestão de negócios. Engenharia de ponta a ponta.</p>
+            <p>Sistema para pequenos negócios: clientes, serviços e agendamentos. Da API em Java à interface em React, com dados isolados por negócio.</p>
+            <ul class="feature-list"><li>JWT, renovação de sessão e controle de acesso</li><li>Multi-tenancy e regras de segurança no backend</li><li>Agenda com fuso horário e proteção contra sobreposição</li></ul>
+            <ul class="tags" aria-label="Tecnologias do NexusGest"><li>Java</li><li>Spring Boot</li><li>React</li><li>PostgreSQL</li></ul>
+            <div class="actions"><a class="button ink" href="https://nexusgest.pages.dev/" target="_blank" rel="noopener">Abrir demonstração <span aria-hidden="true">↗</span></a><a class="text-link" href="#nexus-detalhes">Por dentro do projeto <span aria-hidden="true">↓</span></a></div>
+            <p class="project-note">Ambiente experimental gratuito: a API pode demorar a iniciar. Recuperação de senha por e-mail indisponível.</p>
+          </div>
+          <figure class="project-image"><div class="browser-bar" aria-hidden="true"><span>● ● ●</span><span>nexusgest.pages.dev</span><span>↗</span></div><a href="assets/nexusgest-login.jpg" target="_blank" rel="noopener" aria-label="Ampliar captura da tela pública de login do NexusGest"><img src="assets/nexusgest-login.jpg" width="1440" height="900" alt="Captura real do NexusGest: apresentação do sistema e formulário de login" loading="lazy"></a><figcaption><span class="status-dot" aria-hidden="true"></span> CAPTURA REAL · TELA PÚBLICA DE LOGIN</figcaption></figure>
+          <details class="project-details" id="nexus-detalhes"><summary>Arquitetura, deploy e limites do experimento <span aria-hidden="true">+</span></summary><div class="details-grid"><div><h4>Da interface ao banco</h4><p>React com TypeScript → API Spring Boot → PostgreSQL. Autorização e isolamento por negócio ficam no servidor. A agenda considera o fuso do negócio e protege reservas concorrentes no banco.</p></div><div><h4>Ambiente experimental</h4><p>Interface no Cloudflare Pages, API no Render Free e banco no Neon Free. A infraestrutura gratuita está sujeita a suspensão por inatividade, demora na retomada e cotas. A recuperação de senha por e-mail está indisponível neste ambiente. Sem garantia de disponibilidade; use apenas dados de teste.</p><p class="small">Código privado. A demonstração permite conhecer a interface; não representa operação comercial.</p></div></div></details>
+        </article>
+        <div class="secondary-projects">
+          <article class="project-card transcreve" aria-labelledby="transcreve-titulo">
+            <p class="project-meta"><span>PROJETO PESSOAL · EM DESENVOLVIMENTO</span><span>02</span></p>
+            <div class="project-art audio-art" aria-hidden="true"><span>áudio</span><div class="waveform"><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i></div><span class="audio-arrow">→</span><span class="audio-text">texto<span>_</span></span></div>
+            <h3 id="transcreve-titulo">Transcreve</h3><p class="project-subtitle">Áudio em texto. Processamento nos bastidores.</p><p>Backend Java com processamento assíncrono, divisão de áudio com FFmpeg e integração com Gemini. Checkpoints permitem reaproveitar partes já salvas.</p>
+            <ul class="tags" aria-label="Tecnologias do Transcreve"><li>Java</li><li>Spring Boot</li><li>Gemini API</li><li>FFmpeg</li></ul>
+            <p class="project-note">Execução local documentada · sem demonstração pública.</p><a class="project-link" href="https://github.com/bernas0610/projeto_sistema_transcricao" target="_blank" rel="noopener">Explorar repositório <span aria-hidden="true">↗</span></a>
+          </article>
+          <article class="project-card flowroom" aria-labelledby="flowroom-titulo">
+            <p class="project-meta"><span>PROJETO ACADÊMICO · EM SQUAD</span><span>03</span></p>
+            <div class="project-art room-art" aria-hidden="true"><span class="room-symbol">[<span>↗</span>]</span><span>ESPAÇOS CONECTADOS.<br>RESERVAS ORGANIZADAS.</span></div>
+            <h3 id="flowroom-titulo">FlowRoom</h3><p class="project-subtitle">Salas, pessoas e trabalho em equipe.</p><p>Projeto da Residência de Software II, com acompanhamento da Accenture. Atuação no backend de um gerenciador de salas e reservas, com JWT, permissões e persistência.</p>
+            <ul class="tags" aria-label="Tecnologias do FlowRoom"><li>Java</li><li>Spring Security</li><li>PostgreSQL</li><li>Flyway</li></ul>
+            <p class="project-note">Formação acadêmica · “RoomFlow” no repositório.</p><a class="project-link" href="https://github.com/squad27-accenture/Gerenciador-de-salas" target="_blank" rel="noopener">Explorar repositório <span aria-hidden="true">↗</span></a>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="about shell section" id="sobre" aria-labelledby="sobre-titulo">
+      <div><p class="eyebrow">02 / ALÉM DO CÓDIGO</p><h2 id="sobre-titulo">Curiosidade<br>que vira<br><em>construção.</em></h2><p class="location"><span aria-hidden="true">↳</span> Sergipe, Brasil</p></div>
+      <div class="about-body"><p class="about-lead">Gosto de entender como as coisas funcionam. E de construir o que vem depois.</p><p>Sou Bernardo, estudante de Análise e Desenvolvimento de Sistemas na Universidade Tiradentes. Meu foco é backend com Java: transformar regras de negócio em APIs claras, com atenção à segurança e à persistência dos dados.</p><p>Entre projetos pessoais e experiências acadêmicas em squad, pratico o ciclo de desenvolver, testar e integrar. Procuro minha primeira vaga ou estágio para continuar aprendendo em equipe.</p><ol class="journey"><li><span class="journey-label">FORMAÇÃO</span><h3>Análise e Desenvolvimento de Sistemas</h3><p>Universidade Tiradentes — UNIT · em curso</p></li><li><span class="journey-label">PRÁTICA ACADÊMICA</span><h3>Residência de Software II</h3><p>Desenvolvimento em squad, com acompanhamento da Accenture. Experiência de formação, sem vínculo de emprego.</p></li><li><span class="journey-label">CONSTRUÇÃO CONTÍNUA</span><h3>Projetos pessoais</h3><p>NexusGest e Transcreve: segurança, dados e processamento aplicados a problemas concretos.</p></li></ol></div>
+    </section>
+
+    <section class="stack-section light-section" id="tecnologias" aria-labelledby="stack-titulo"><div class="shell section"><div class="section-heading"><div><p class="eyebrow">03 / FERRAMENTAS & FUNDAMENTOS</p><h2 id="stack-titulo">Tecnologia<br><em>com contexto.</em></h2></div><p>Ferramentas que uso em projetos.<br>O que aplico e em qual contexto.</p></div><div class="stack-grid"><article><span class="stack-index">01 / BACKEND</span><h3>Java & Spring</h3><p>Spring Boot, Spring Security, APIs REST, JPA/Hibernate e JWT.</p><a href="#nexus-titulo">Na prática: NexusGest <span aria-hidden="true">↗</span></a></article><article><span class="stack-index">02 / DADOS</span><h3>PostgreSQL</h3><p>Persistência, migrações com Flyway, isolamento e integridade de dados.</p><a href="#flowroom-titulo">Na prática: FlowRoom <span aria-hidden="true">↗</span></a></article><article><span class="stack-index">03 / INTEGRAÇÕES</span><h3>Assíncrono & IA</h3><p>Processamento em segundo plano, checkpoints, FFmpeg e API do Gemini.</p><a href="#transcreve-titulo">Na prática: Transcreve <span aria-hidden="true">↗</span></a></article><article><span class="stack-index">04 / ENTREGA</span><h3>Do Git à interface</h3><p>Git, GitHub, Maven e React com TypeScript no NexusGest.</p><a href="https://github.com/bernas0610" target="_blank" rel="noopener">Ver meus repositórios <span aria-hidden="true">↗</span></a></article></div></div></section>
+
+    <section class="contact shell section" id="contato" aria-labelledby="contato-titulo"><p class="eyebrow"><span class="status-dot" aria-hidden="true"></span> 04 / PRÓXIMA CONEXÃO</p><div class="contact-heading"><h2 id="contato-titulo">Vamos construir<br>o <em>próximo passo?</em></h2><a class="contact-arrow" href="mailto:bernardomendesoficial@gmail.com" aria-label="Enviar e-mail para Bernardo Mendes"><span aria-hidden="true">↗</span></a></div><p>Aberto à primeira oportunidade em backend Java.<br>Uma boa conversa pode ser o começo.</p><div class="contact-bottom"><a class="email" href="mailto:bernardomendesoficial@gmail.com">bernardomendesoficial@gmail.com <span aria-hidden="true">↗</span></a><div class="social-links"><a href="https://www.linkedin.com/in/bernardo-mendes-028306305" target="_blank" rel="noopener">LinkedIn ↗</a><a href="https://github.com/bernas0610" target="_blank" rel="noopener">GitHub ↗</a><a href="../curriculo.pdf" target="_blank" rel="noopener">Currículo PDF ↗</a></div></div></section>
+  </main>
+  <footer class="footer shell"><a class="brand" href="#inicio" aria-label="Voltar ao início">bm<span aria-hidden="true">.</span></a><p>© 2026 Bernardo Mendes · Feito com intenção.</p><a href="#inicio">Voltar ao topo <span aria-hidden="true">↑</span></a></footer>
+</body>
+</html>
