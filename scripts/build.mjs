@@ -7,7 +7,7 @@ import './check.mjs';
 const root = resolve(dirname(fileURLToPath(import.meta.url)), '..');
 const output = resolve(root, 'review/site');
 await mkdir(output, { recursive: true });
-for (const file of ['index.html', 'foto.jpg', 'curriculo.pdf', 'v2']) {
+for (const file of ['index.html', 'legacy.html', 'foto.jpg', 'curriculo.pdf', 'v2']) {
   await cp(resolve(root, file), resolve(output, file), { recursive: true });
 }
 console.log(`PASS: build estático preparado em ${output}`);

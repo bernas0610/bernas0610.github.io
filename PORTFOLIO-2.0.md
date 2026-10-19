@@ -1,5 +1,9 @@
 # Portfólio 2.0 — primeira implementação
 
+## Atualização para GitHub Pages
+
+Publicação autorizada pelo proprietário após a primeira implementação. A versão 2.0 foi promovida para `index.html`, com caminhos de assets ajustados, URL canônica e metadados de compartilhamento. A diretiva `noindex` permanece apenas na cópia de revisão `/v2/`. A página anterior está preservada byte a byte em `legacy.html`; foto e currículo permanecem intactos. Os scripts de checagem agora validam as duas páginas e a cópia histórica. O build inclui a nova página principal e o arquivo histórico. As seções seguintes registram a entrega inicial anterior à promoção.
+
 Revisão local em 18/10/2026. Sem commit, push, deploy, contas ou serviços novos. O repositório e o deploy do NexusGest foram apenas consultados.
 
 ## Análise e direção visual
