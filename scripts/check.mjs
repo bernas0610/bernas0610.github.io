@@ -8,13 +8,13 @@ const root = resolve(dirname(fileURLToPath(import.meta.url)), '..');
 const original = {
   'legacy.html': 'c496173315ee6a85d12f94993eb2d2e0a8bf35f418912a4632e88a6590b15ee6',
   'foto.jpg': '70cd09024b26971521cb5569e49c7487de95118a6524d4305ef65bc95a6d25ad',
-  'curriculo.pdf': 'b3c8c8fb877adf485ec740e8ec719b980ca9473684c34258732f643b5c1389ca'
+  'curriculo.pdf': '25a85ac35729e981e72d9047fc80d349d0f672fd280437c2056b9637e21bcbf9'
 };
 for (const [file, expected] of Object.entries(original)) {
   const actual = createHash('sha256').update(await readFile(resolve(root, file))).digest('hex');
-  if (actual !== expected) throw new Error(`Original alterado: ${file}`);
+  if (actual !== expected) throw new Error(`Hash inesperado: ${file}`);
 }
-console.log('PASS: HTML, foto e currículo originais preservados (SHA-256).');
+console.log('PASS: HTML histórico e foto preservados; currículo atualizado validado (SHA-256).');
 for (const page of ['index.html', 'v2/index.html']) {
 const html = await readFile(resolve(root, page), 'utf8');
 const ids = [...html.matchAll(/\bid="([^"]+)"/g)].map(match => match[1]);
@@ -43,3 +43,4 @@ for (const file of ['v2/app.js', 'v2/theme.js', 'scripts/check.mjs', 'scripts/bu
   if (result.status !== 0) throw new Error(result.stderr);
 }
 console.log('PASS: verificação sintática JavaScript em todos os scripts.');
+
